@@ -1,14 +1,14 @@
-<!<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reven</title>
+  <title>Reven — Silent Elite</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #e0e0e0;
-      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #0a0a0a;
+      color: #e5e5e5;
+      font-family: "Poppins", "Helvetica Neue", sans-serif;
       text-align: center;
       margin: 0;
       padding: 0;
@@ -25,17 +25,17 @@
       width: 180px;
       height: auto;
       border-radius: 10px;
-      filter: drop-shadow(0 0 15px rgba(255,255,255,0.15));
-      transition: 0.5s ease;
+      filter: drop-shadow(0 0 18px rgba(255,255,255,0.1));
+      transition: 0.6s ease;
     }
 
     .logo:hover {
-      transform: scale(1.08);
-      filter: drop-shadow(0 0 25px rgba(255,255,255,0.3));
+      transform: scale(1.07);
+      filter: drop-shadow(0 0 25px rgba(255,255,255,0.25));
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 40px;
       font-weight: 600;
       letter-spacing: 4px;
       margin-top: 25px;
@@ -45,49 +45,64 @@
 
     .slogan {
       font-size: 14px;
-      color: #a8a8a8;
+      color: #b0b0b0;
       font-style: italic;
       margin-top: -8px;
       letter-spacing: 1px;
+      opacity: 0.8;
     }
 
     .divider {
-      width: 120px;
+      width: 100px;
       height: 1px;
       background-color: #333;
-      margin: 30px auto;
+      margin: 35px auto;
+      opacity: 0.4;
     }
 
     .founders {
       font-size: 13px;
-      color: #777;
-      margin-top: 40px;
+      color: #999;
+      margin-top: 20px;
       letter-spacing: 1px;
+      opacity: 0.8;
     }
 
     .founders span {
-      color: #c0c0c0;
+      color: #cfcfcf;
+      font-weight: 500;
     }
 
     footer {
       margin-top: 60px;
       font-size: 11px;
       color: #555;
+      letter-spacing: 1px;
+      opacity: 0.6;
+    }
+
+    /* efek halus saat halaman dimuat */
+    body {
+      animation: fadeIn 1.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 
 <body>
   <div class="logo-container">
-    <img src="IMG_2635.jpeg" alt="Reven Logo" style="width:200px; display:block; margin:40px auto; opacity:0.85; filter: drop-shadow(0 0 8px #555); border-radius:10px;">
-  </div>
+    <img src="IMG_2635.jpeg" alt="Reven Logo" style="width:200px; display:block; margin:auto; opacity:0.85; filter: drop-shadow(0 0 10px #555);">
 
   <h1>REVEN</h1>
   <p class="slogan">“Hard to reach — unseen yet present.”</p>
 
   <div class="divider"></div>
 
-  <p class="DIdirikan">Didirikan oleh <span>MR.X1</span> & <span>MR.X2</span></p>
+  <p class="founders">Dibentuk oleh <span>Mr. X1</span> and <span>Mr. X2</span></p>
 
   <footer>© 2025 Reven — Silent Elite</footer>
 </body>
