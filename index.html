@@ -75,6 +75,42 @@ h1 {
 }
 </head>
 <body>
+  .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 12px rgba(255,255,255,0.15));
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 18px rgba(255,255,255,0.25));
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-top: 20px;
+  color: #e0e0e0;
+  text-transform: uppercase;
+}
+
+.slogan {
+  font-size: 14px;
+  color: #a8a8a8;
+  font-style: italic;
+  margin-top: -10px;
+  letter-spacing: 1px;
+}
   <body>
   <div class="logo-container">
     <img src="logo-reven.jpeg" alt="Reven Logo" class="logo">
